@@ -1,0 +1,106 @@
+html {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    background: white;
+    padding: 1rem .15rem;
+}
+
+*,
+::before,
+::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: sans-serif;
+    line-height: 1.5;
+    background: #EDEEEF;
+    border-radius: 5px;
+}
+
+h1, h2, h3, h4, h5, h6, p, figcaption, li {
+    opacity: .75;
+}
+
+.header {
+    padding-top: 1rem;
+}
+
+.header h1,
+.header p {
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 2.5rem;
+}
+
+.main {
+    width: 98%;
+    margin: 0 auto;
+}
+
+.main .img-div {
+    background: white;
+    display: grid;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+
+.main .img-div figure {
+    width: 93%;
+}
+
+.main .img-div figure img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+}
+
+.main .img-div figure .img-caption {
+    text-align: center;
+    padding-top: 1rem;
+}
+
+section.tribute-info {
+    margin: 0 auto;
+}
+
+section.tribute-info h3 {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+section.tribute-info ul {
+    width: 45%;
+    margin: 0 auto;
+}
+
+section.tribute-info ul li {
+    margin-bottom: 20px;
+}
+
+section.tribute-info ul li:last-child {
+    margin-bottom: 50px;
+}
+
+section.tribute-info ul li span {
+    font-weight: bold;
+}
+
+section.tribute-info blockquote {
+    width: 44%;
+    margin: 0 auto 3rem auto;
+    text-align: justify;
+}
+
+section.tribute-info > p {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 2rem;
+} 
+section.tribute-info > p a {
+    color: #2E5077;
+}

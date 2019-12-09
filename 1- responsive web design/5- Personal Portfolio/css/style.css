@@ -1,0 +1,257 @@
+html {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #303841;
+}
+
+
+/* ----- HEADER STYLES ------ */ 
+
+header nav {
+    position: fixed;
+    z-index: 8;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #be3144;
+    display: flex;
+    padding: 0 1rem;
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
+}
+
+header nav a {
+    text-decoration: none;
+    color: white;
+    padding: 1.5rem 1.25rem;
+    font-size: 1.3rem;
+}
+
+header nav a:hover {
+    background: #45567d;
+}
+
+header section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header section h1 {
+    color: white;
+    margin: 0;
+    padding: 0;
+} 
+
+header section p {
+    font-style: italic;
+    color: white;
+    letter-spacing: .5px;
+    font-size: 1rem;
+}
+
+
+
+/* ----- MAIN STYLES ------ */
+
+main {
+    padding: 7rem 0 5rem 0;
+    background: #45567d;
+    text-align: center;
+}
+
+main h2 {
+    color: white;
+    font-size: 1.2rem;
+    border-bottom: 2px solid white;
+    display: inline-block;
+    margin-bottom: 3rem;
+}
+
+main section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 400px));
+    justify-content: space-evenly;
+    grid-row-gap: 40px;
+    margin-bottom: 4rem;
+}
+
+main section article a div.img-project img {
+    width: 100%;
+    vertical-align: top;
+}
+
+main section article div.project-tile {
+    width: 100%;
+    background: #303841;
+    color: white;
+    display: grid;
+    grid-auto-flow: column; 
+    justify-content: center;
+    align-items: center;
+    grid-column-gap: 10px;
+    font-size: 1.2rem;
+}
+
+main section article a {
+    text-decoration: none;
+}
+
+main section article div.project-tile span {
+    color: #c0960d;
+    opacity: 0;
+    transition: all .5s ease;
+}
+
+main section article:hover div.project-tile span {
+    opacity: 1;
+}
+
+main > a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: center;
+    align-items: center;
+    grid-column-gap: 7px;
+    background: #303841;
+    padding: 1rem 1.5rem;
+    max-width: 200px;
+    margin: 0 auto;
+    border-radius: 3px;
+    transition: all .5s ease;
+    position: relative;
+}
+
+main > a i {
+    position: absolute;
+    transition: all .5s ease;
+    left: 150px;
+}
+
+main > a:hover {
+    background: #be3144;
+}
+
+main > a:hover i {
+    margin-left: 3px;
+}
+
+
+
+/* ----- FOOTER STYLES ------ */
+
+footer section.contact {
+    padding: 3rem 0;
+    border-bottom: 4px solid #be3144;
+    display: grid;
+    justify-content: center;
+}
+
+footer section.contact article h2 {
+    font-size: 1.5rem;
+    color: white;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+footer section.contact article p {
+    font-size: 1rem;
+    color: white;
+    text-align: center;
+    font-style: italic;
+}
+
+footer section article.contact-networks {
+    display: grid;
+    grid-auto-flow: column;
+    grid-column-gap: 2.5rem;
+}
+
+footer section article.contact-networks a {
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    justify-content: center;
+    grid-column-gap: 5px;
+    font-size: 1.5rem;
+    color: white;
+    text-decoration: none;
+    position: relative;
+    transition: all .5s ease;
+}
+
+footer section article.contact-networks a:hover {
+    margin-bottom: -20px;
+}
+
+footer section.bottom-footer {
+    padding: 2rem 0;
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    color: white;
+}
+
+footer section.bottom-footer a {
+    text-decoration: none;
+    color: white;
+}
+
+
+/* MEDIAQUERIE */
+
+@media screen and (min-width: 1024px) {
+
+    header nav {
+        justify-content: flex-end;
+    }
+
+    header section h1 {
+        font-size: 3.5rem;
+    } 
+
+    header section p {
+        font-size: 1.75rem;
+    }
+
+    main h2 {
+        font-size: 2.5rem;
+    }
+
+    footer section.contact {
+        padding: 7rem 0;
+    }
+
+    footer section.contact article h2 {
+        font-size: 3.5rem;
+    }
+
+    footer section.contact article p {
+        font-size: 1.3rem;
+    }
+    
+    footer section.bottom-footer {
+        grid-auto-flow: column;
+        justify-content: space-evenly;
+        font-size: 1.25rem;
+    }
+
+}
